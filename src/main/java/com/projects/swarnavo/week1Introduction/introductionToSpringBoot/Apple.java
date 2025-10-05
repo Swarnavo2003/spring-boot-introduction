@@ -4,7 +4,6 @@ import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import org.springframework.stereotype.Component;
 
-@Component
 public class Apple {
     public void eatApple() {
         System.out.println("I am eating the apple");
@@ -16,7 +15,7 @@ public class Apple {
     }
 
     @PreDestroy
-    public void callThisBeforeDestroy() {
+    public void callThisAfterDestroy() {
         System.out.println("Destroying the Apple Bean");
     }
 }
